@@ -1,5 +1,12 @@
-# base64-custom-pattern
-checked for base 64 as per a post - needs to be validated as pattern
+# Purpose
+A custom pattern definition to flag base64 encoded text as a secret scanning alert
+
+## ⚠️ Warning - not tested. Use at own risk.
+This hasn't been tested so there will probably be false positives in what it finds. Keeping this here in case it helps someone figure this out...
+
+
+## base64-custom-pattern
+checke for base 64 as per a post - needs to be validated as pattern
 
 This is a pattern I developed using GitHub Copilot for base64:
 `(?:.{1,124})(?:(?i)(?:[A-Z0-9+/]{4}){20,}(?:[A-Z0-9+/]{2}==|[A-Z0-9+/]{3}=)?)(?:.{0,})`
